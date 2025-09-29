@@ -26,9 +26,7 @@ A modern web application powered by machine learning to detect spam emails with 
 - **Recall**: 92.86%
 - **F1-Score**: 95.55%
 
-## 🚀 Live Demo
 
-[Try the live demo here!](#)
 
 ## 📸 Screenshots
 
@@ -100,7 +98,7 @@ spam-mail-detection/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/spam-mail-detection.git
+   git clone https://github.com/dev-jesu/spam-mail-detection.git
    cd spam-mail-detection
    ```
 
