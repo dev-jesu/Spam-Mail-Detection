@@ -132,9 +132,9 @@ jspm_packages/
 profile_default/
 ipython_config.py
 
-# Machine Learning Models (Large files - exclude for now, can be downloaded separately)
-backend/models/*.pkl
-backend/models/*.joblib
+# Machine Learning Models (Small size - included in repository)
+# backend/models/*.pkl  # Commented out - models are only ~0.5MB total
+# backend/models/*.joblib
 backend/models/*.h5
 backend/models/*.model
 

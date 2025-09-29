@@ -124,18 +124,16 @@ spam-mail-detection/
    pip install -r requirements.txt
    ```
 
-4. **Download Model Files**
+4. **Model Files**
    
-   **Important**: The ML model files (`.pkl` files) are not included in the repository due to their large size. You need to obtain these files:
+   ✅ **Ready to use**: The trained ML model files are included in the repository (total size: ~0.5MB):
    
-   - `layer1_logreg_model.pkl`
-   - `layer2_logreg_model.pkl` 
-   - `vectorizer_layer1.pkl`
-   - `vectorizer_layer2.pkl`
+   - `layer1_logreg_model.pkl` (~40KB) - Binary classification (Ham vs Others)
+   - `layer2_logreg_model.pkl` (~157KB) - Spam type classification  
+   - `vectorizer_layer1.pkl` (~184KB) - TF-IDF vectorizer for layer 1
+   - `vectorizer_layer2.pkl` (~183KB) - TF-IDF vectorizer for layer 2
    
-   Place these files in the `backend/models/` directory before running the application.
-   
-   See `backend/models_instructions.md` for more details on obtaining the models.
+   No additional downloads required!
 
 5. **Setup Frontend**
    ```bash

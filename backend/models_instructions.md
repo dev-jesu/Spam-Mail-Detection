@@ -1,19 +1,23 @@
 # ML Models Setup Instructions
 
-This directory should contain the trained machine learning models required for spam detection.
+This directory contains the trained machine learning models required for spam detection.
 
-## Required Model Files
+## Model Files Included
 
-The following model files are required for the spam detection system to work:
+All required model files are included in this repository:
 
-- `layer1_logreg_model.pkl` - First layer logistic regression model (Binary classification: Ham vs Others)
-- `layer2_logreg_model.pkl` - Second layer logistic regression model (Spam type classification)
-- `vectorizer_layer1.pkl` - TF-IDF vectorizer for first layer
-- `vectorizer_layer2.pkl` - TF-IDF vectorizer for second layer
+- `layer1_logreg_model.pkl` (~40KB) - First layer logistic regression model (Binary classification: Ham vs Others)
+- `layer2_logreg_model.pkl` (~157KB) - Second layer logistic regression model (Spam type classification)
+- `vectorizer_layer1.pkl` (~184KB) - TF-IDF vectorizer for first layer
+- `vectorizer_layer2.pkl` (~183KB) - TF-IDF vectorizer for second layer
 
-## How to Obtain Models
+**Total Size**: ~0.5MB (all files combined)
 
-Since these are large files (>50MB combined), they are excluded from git. You have several options:
+## Ready to Use
+
+✅ **No setup required** - The models are already included and ready to use!
+
+The FastAPI backend will automatically load these models on startup.
 
 ### Option 1: Train Your Own Models
 
