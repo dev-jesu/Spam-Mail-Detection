@@ -37,7 +37,7 @@ function Home() {
             Spam Mail Detection
           </h1>
           <p className="hero-subtitle">
-            Protect yourself from phishing scams and spam emails with our advanced AI-powered detection system
+            Protect yourself from spam emails with our advanced ML-powered detection system
           </p>
         </div>
       </div>
@@ -130,7 +130,7 @@ function Home() {
         <div className="info-cards">
           <div className="card info-card">
             <FiShield className="info-icon" />
-            <h3>AI-Powered Detection</h3>
+            <h3>ML-Powered Detection</h3>
             <p>Advanced machine learning algorithms analyze email patterns and content</p>
           </div>
           

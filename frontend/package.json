@@ -2,7 +2,7 @@
   "name": "spam-mail-detection-frontend",
   "version": "1.0.0",
   "description": "Modern React frontend for AI-powered spam mail detection system",
-  "homepage": "https://github.com/yourusername/spam-mail-detection",
+  "homepage": ".",
   "keywords": ["spam", "detection", "ml", "ai", "email", "security", "logistic-regression"],
   "author": "Your Name",
   "private": true,
