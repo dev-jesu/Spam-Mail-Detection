@@ -32,7 +32,11 @@ A modern web application powered by machine learning to detect spam emails with 
 
 ## 📸 Screenshots
 
-> Images are stored in the `docs/` folder.
+> Here you can find screenshots demonstrating the key features of the application.  
+> The homepage screenshot shows the main spam detection interface where users can input emails for analysis.  
+> The analytics dashboard images display model performance metrics, including accuracy, precision, recall, F1-score, ROC curve, and the confusion matrix.  
+> These visuals provide a clear overview of how the application processes emails and presents results to the user.
+
 
 ### Homepage (main interface)
 ![Homepage](docs/home.png)
