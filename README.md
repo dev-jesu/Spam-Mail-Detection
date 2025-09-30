@@ -9,7 +9,7 @@ A modern web application powered by machine learning to detect spam emails with 
 
 ## 🌟 Features
 
-- **🎯 High Accuracy**: 96.58% accuracy in spam detection
+- **🎯 High Accuracy**: 93.47% overall accuracy
 - **⚡ Real-time Analysis**: Instant email analysis and classification
 - **📊 Data Visualization**: Interactive charts showing dataset statistics and model performance
 - **🎨 Modern UI/UX**: Beautiful, responsive design with professional styling
@@ -18,23 +18,39 @@ A modern web application powered by machine learning to detect spam emails with 
 
 ## 📊 Model Performance
 
-- **Total Dataset**: 517,401 emails
-- **Ham (Legitimate)**: 312,770 emails
-- **Spam**: 204,631 emails
-- **Accuracy**: 96.58%
-- **Precision**: 98.41%
-- **Recall**: 92.86%
-- **F1-Score**: 95.55%
+- **Total Dataset**: 190,000+ emails
+- **Training Samples**: 155,001
+- **Test Samples**: 38,751
+- **Accuracy**: 93.47%
+- **Precision**: 95.95%
+- **Recall**: 89.99%
+- **F1-Score**: 92.88%
+
+**Dataset:** This project uses the [190k Spam-Ham Email Dataset](https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification) for training and testing. Credit to the dataset authors and the Kaggle community.
 
 
 
 ## 📸 Screenshots
 
-### Homepage - Spam Detection Interface
-![Homepage](docs/screenshots/homepage.png)
+> Images are stored in the `docs/` folder.
 
-### Analytics - Model Performance Dashboard
-![Analytics](docs/screenshots/analytics.png)
+### Homepage (main interface)
+![Homepage](docs/home.png)
+
+### Analytics Dashboard – Top Section
+![Analytics Top](docs/analytics_top.png)
+
+### Analytics Dashboard – Bottom Section
+![Analytics Bottom](docs/analytics_bottom.png)
+
+### ROC Curve
+![ROC Curve](docs/roc_curve.png)
+
+### Confusion Matrix
+![Confusion Matrix](docs/confusion_matrix.png)
+
+### Precision-Recall Curve
+![Precision-Recall Curve](docs/precision_curve.png)
 
 ## 🛠️ Technology Stack
 
@@ -192,6 +208,12 @@ Response:
 curl "http://127.0.0.0:8000/stats"
 ```
 
+## 🙌 Acknowledgements
+
+- Dataset: [190k Spam-Ham Email Dataset](https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification)
+  - Credit to the original dataset authors and the Kaggle community.
+- Tech stack and libraries: FastAPI, React, Scikit-learn, NLTK, Uvicorn, Recharts.
+
 ## 🔧 Development
 
 ### Backend Development
@@ -224,3 +246,10 @@ curl "http://127.0.0.0:8000/stats"
    npm run build
    ```
 
+---
+
+---
+
+## 🙏 Thank You
+
+Thank you for visiting this project! Feel free to explore, contribute, or use it to make email communication safer and smarter.
