@@ -35,7 +35,7 @@ A modern web application powered by machine learning to detect spam emails with 
 > Images are stored in the `docs/` folder.
 
 ### Homepage (main interface)
-![Homepage](docs/home_1.png)
+![Homepage](docs/home.png)
 
 ### Analytics Dashboard – Top Section
 ![Analytics Top](docs/analytics_top.png)
@@ -246,3 +246,10 @@ curl "http://127.0.0.0:8000/stats"
    npm run build
    ```
 
+---
+
+---
+
+## 🙏 Thank You
+
+Thank you for visiting this project! Feel free to explore, contribute, or use it to make email communication safer and smarter.
