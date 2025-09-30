@@ -107,14 +107,14 @@ def predict_email(req: EmailRequest):
 def get_dataset_stats():
     """Return dataset statistics for visualization"""
     return {
-        "total_emails": 517401,
-        "spam_count": 204631,
-        "ham_count": 312770,
+        "total_emails": 190000,
+        "spam_count": 75050,
+        "ham_count": 114950,
         "model_performance": {
-            "accuracy": 96.58,
-            "precision": 98.41,
-            "recall": 92.86,
-            "f1_score": 95.55
+            "accuracy": 93.47,
+            "precision": 95.95,
+            "recall": 89.99,
+            "f1_score": 92.88
         },
         "features_used": [
             "text_length",
@@ -125,6 +125,10 @@ def get_dataset_stats():
             "url_count"
         ],
         "algorithm": "Logistic Regression + Naive Bayes Hybrid (Two-Layer)",
-        "training_data_size": "517,401 emails",
+        "training_data_size": "155,001 training / 38,751 test",
+        "training_samples": 155001,
+        "test_samples": 38751,
+        "dataset_name": "190k Spam-Ham Email Dataset",
+        "dataset_link": "https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification",
         "feature_vector_size": 3000
     }

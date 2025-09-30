@@ -29,14 +29,14 @@ function About() {
         console.error("Error fetching stats:", error);
         // Fallback data if API fails
         setStats({
-          total_emails: 517401,
-          spam_count: 204631,
-          ham_count: 312770,
+          total_emails: 190000,
+          spam_count: 75050,
+          ham_count: 114950,
           model_performance: {
-            accuracy: 96.58,
-            precision: 98.41,
-            recall: 92.86,
-            f1_score: 95.55
+            accuracy: 93.47,
+            precision: 95.95,
+            recall: 89.99,
+            f1_score: 92.88
           },
           features_used: [
             "text_length",
@@ -47,7 +47,11 @@ function About() {
             "url_count"
           ],
           algorithm: "Logistic Regression (Two-Layer)",
-          training_data_size: "517,401 emails",
+          training_data_size: "155,001 training / 38,751 test",
+          training_samples: 155001,
+          test_samples: 38751,
+          dataset_name: "190k Spam-Ham Email Dataset",
+          dataset_link: "https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification",
           feature_vector_size: 3000
         });
       } finally {
@@ -142,6 +146,12 @@ function About() {
           <div className="card-content">
             <h3>Training Data</h3>
             <p className="highlight">{stats.training_data_size}</p>
+            {stats.training_samples && stats.test_samples && (
+              <p>
+                <strong>Training Samples:</strong> {stats.training_samples.toLocaleString()}<br />
+                <strong>Test Samples:</strong> {stats.test_samples.toLocaleString()}
+              </p>
+            )}
           </div>
         </div>
 
@@ -152,6 +162,21 @@ function About() {
             <p className="highlight">{stats.feature_vector_size} dimensions</p>
           </div>
         </div>
+
+        {stats.dataset_link && (
+          <div className="card model-info-card">
+            <FiPieChart className="card-icon" />
+            <div className="card-content">
+              <h3>Dataset</h3>
+              <p className="highlight">
+                <a href={stats.dataset_link} target="_blank" rel="noreferrer">
+                  {stats.dataset_name || 'Spam-Ham Email Dataset'}
+                </a>
+              </p>
+              <p>Credit: Kaggle community</p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Dataset Distribution */}
@@ -260,20 +285,7 @@ function About() {
         </div>
       </div>
 
-      {/* Features Used */}
-      <div className="features-section">
-        <h2 className="section-title">
-          <FiCpu className="section-icon" />
-          Features Analyzed
-        </h2>
-        <div className="features-grid">
-          {stats.features_used.map((feature, index) => (
-            <div key={index} className="feature-item">
-              <span className="feature-name">{feature.replace('_', ' ')}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      
 
       {/* Technical Details */}
       <div className="technical-section">
